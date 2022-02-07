@@ -1,0 +1,35 @@
+/*
+ * @Author: Mengke
+ * @LastEditors: Mengke
+ * @email: z9mk65@gmail.com
+ * @Date: 2022-02-06 11:31:08
+ * @LastEditTime: 2022-02-06 11:31:21
+ * @Description: Modify here please
+ */
+
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "noEmit": true,
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            "@mock/*": ["mock/*"]
+        }
+    },
+    "include": ["./src"]
+}

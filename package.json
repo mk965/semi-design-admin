@@ -1,0 +1,38 @@
+{
+  "name": "semi-design-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk965/semi-design-admin.git"
+  },
+  "author": "mk965",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mk965/semi-design-admin/issues"
+  },
+  "homepage": "https://github.com/mk965/semi-design-admin#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.1.4",
+    "path": "^0.12.7",
+    "vite": "^2.7.13"
+  },
+  "dependencies": {
+    "@douyinfe/semi-ui": "^2.3.1",
+    "axios": "^0.25.0",
+    "i18next": "^21.6.10",
+    "less": "^4.1.2",
+    "qs": "^6.10.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.15.3",
+    "react-intl": "^5.24.4",
+    "react-router-dom": "^6.2.1",
+    "zustand": "^3.6.9"
+  }
+}
