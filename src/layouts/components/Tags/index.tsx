@@ -4,14 +4,12 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import TagsViewAction from './tagAction';
 import useStore from '@/store/common/headerTag';
 import menuList, { MenuItem } from '@/config/sider';
-import { useLocale } from '@/locales';
 import { useTranslation } from 'react-i18next';
 // import './index.scss'
 
 const Index: FC = () => {
 	const navigate = useNavigate();
 	const location = useLocation();
-	const { formatMessage } = useLocale();
 	const [tags, activeTagId, addTag, removeTag, setActiveTag ] =
 		useStore((state) => [
 			state.tags,

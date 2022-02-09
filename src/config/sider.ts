@@ -3,13 +3,14 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:23
- * @LastEditTime: 2022-02-07 21:55:32
+ * @LastEditTime: 2022-02-07 22:34:29
  * @Description: 侧边栏配置
  */
 
 import {
 	IconHome,
 	IconArticle,
+	IconGlobeStroke,
 	IconEdit,
 	IconGridRectangle,
 	IconApps,
@@ -40,11 +41,12 @@ const MENU_CONFIG: MenuItem[] = [
 		icon: IconArticle,
 		path: '/docs',
 	},
-	// {
-	// 	itemKey: '1-2',
-	// 	text: 'dashboard.monitor',
-	// 	path: '/dashboard/monitor',
-	// },
+	{
+		itemKey: '3-0',
+		text: 'sider.i18n',
+		icon: IconGlobeStroke,
+		path: '/language',
+	},
 
 
 	{

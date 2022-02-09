@@ -111,7 +111,7 @@
 // 	);
 // };
 
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import {
 	Layout,
 	Nav,
@@ -129,7 +129,7 @@ import {
 	IconMoon,
 	IconSun,
 } from '@douyinfe/semi-icons';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '@/config/i18n';
 import Breadcrumb from '../Breadcrumb';
 import useStore from '@/store/common/global';
 import Tags from '../Tags';
@@ -154,7 +154,12 @@ const Index: FC = () => {
 		}
 	};
 
-	const selectLocale = (locale: 'zh_CN' | 'en_US') => {
+	const [language, setLanguage] = useState(i18n.language);
+	useEffect(() => {
+		setLanguage(i18n.language);
+	}, [i18n.language]);
+
+	const selectLocale = (locale: 'zh_CN' | 'en_GB') => {
 		i18n.changeLanguage(locale);
 		// changeLocale(locale);
 		localStorage.setItem('semi_locale', locale);
@@ -226,13 +231,14 @@ const Index: FC = () => {
 
 						<RadioGroup
 							type="button"
-							defaultValue={i18n.language}
+							defaultValue={language}
+							value={language}
 							style={{ marginLeft: '20px' }}
 						>
 							<Radio value={'zh_CN'} onChange={() => selectLocale('zh_CN')}>
 								中文
 							</Radio>
-							<Radio value={'en_US'} onChange={() => selectLocale('en_US')}>
+							<Radio value={'en_GB'} onChange={() => selectLocale('en_GB')}>
 								EN
 							</Radio>
 						</RadioGroup>

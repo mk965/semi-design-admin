@@ -1,6 +1,7 @@
 export const sider = {
 	'sider.dashboard': '仪表板',
 	'sider.docs': '文档',
+	'sider.i18n': '国际化',
 
 	'dashboard.workbeach': '工作台',
 	'dashboard.anlyanis': '分析页',

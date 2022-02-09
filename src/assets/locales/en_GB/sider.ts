@@ -1,6 +1,7 @@
 export const sider = {
 	'sider.dashboard': 'Dashboard',
 	'sider.docs': 'Docs',
+	'sider.i18n': 'I18n',
 	
 	'dashboard.workbeach': 'Workbeach',
 	'dashboard.anlyanis': 'Anlyanis',

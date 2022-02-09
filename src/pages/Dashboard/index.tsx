@@ -40,7 +40,7 @@ function MyComponent() {
     {t('methods.renderProps')}
     <br/>
     <Button onClick={() => i18n.changeLanguage('zh_CN')}>{t('切换到中文')}</Button>
-    <Button onClick={() => i18n.changeLanguage('en_US')}>{t('切换到英语')}</Button>
+    <Button onClick={() => i18n.changeLanguage('en_GB')}>{t('切换到英语')}</Button>
     <Button onClick={() => i18n.changeLanguage('ja')}>{t('切换到日语')}</Button>
   </>
 }
