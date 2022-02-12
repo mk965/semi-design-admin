@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-04 12:14:37
- * @LastEditTime: 2022-02-09 22:55:35
+ * @LastEditTime: 2022-02-12 16:31:05
  * @Description: 国际化相关配置
  */
 
@@ -46,7 +46,6 @@ export const Provider = (props) => {
 	const { i18n } = useTranslation();
 	const locale = getLocalStorage(storageName);
 	const getLocale = useMemo(() => {
-		console.log("getLocalegetLocale")
 		switch (locale) {
 			case 'en_GB':
 				return en_GB;

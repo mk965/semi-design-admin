@@ -3,14 +3,15 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:23
- * @LastEditTime: 2022-02-07 22:34:29
+ * @LastEditTime: 2022-02-12 14:52:04
  * @Description: 侧边栏配置
  */
 
 import {
 	IconHome,
 	IconArticle,
-	IconGlobeStroke,
+	IconLanguage,
+	IconQuote,
 	IconEdit,
 	IconGridRectangle,
 	IconApps,
@@ -44,8 +45,14 @@ const MENU_CONFIG: MenuItem[] = [
 	{
 		itemKey: '3-0',
 		text: 'sider.i18n',
-		icon: IconGlobeStroke,
+		icon: IconLanguage,
 		path: '/language',
+	},
+	{
+		itemKey: '4-0',
+		text: 'sider.guide',
+		icon: IconQuote,
+		path: '/guide',
 	},
 
 

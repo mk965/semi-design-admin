@@ -583,6 +583,11 @@ debug@^4.1.0:
   dependencies:
     ms "2.1.2"
 
+driver.js@0.9.5:
+  version "0.9.5"
+  resolved "https://repo.huaweicloud.com/repository/npm/driver.js/-/driver.js-0.9.5.tgz#ee8a8b6a7d3a49bab6f55cb5e25055837db6cda4"
+  integrity sha512-QIMRsXR+/HdN792vYdZziC2shtHuLMV/oVTsqExOP4YmKjR7wwY4l3n80SebhUcn7z8dG4aTXIhDUGQCOczPyw==
+
 electron-to-chromium@^1.4.17:
   version "1.4.61"
   resolved "https://repo.huaweicloud.com/repository/npm/electron-to-chromium/-/electron-to-chromium-1.4.61.tgz#97689f81b4ac5c996363d9ee7babd3406c44d6c3"
