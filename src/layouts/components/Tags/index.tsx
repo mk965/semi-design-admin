@@ -1,25 +1,33 @@
+/*
+ * @Author: Mengke
+ * @LastEditors: Mengke
+ * @email: z9mk65@gmail.com
+ * @Date: 2022-02-03 21:24:25
+ * @LastEditTime: 2022-02-13 23:16:06
+ * @Description: Modify here please
+ */
+
 import React, { FC, useCallback, useEffect } from 'react';
 import { Tabs, TabPane } from '@douyinfe/semi-ui';
 import { useNavigate, useLocation } from 'react-router-dom';
 import TagsViewAction from './tagAction';
 import useStore from '@/store/common/headerTag';
 import menuList, { MenuItem } from '@/config/sider';
-import { useLocale } from '@/locales';
 import { useTranslation } from 'react-i18next';
-// import './index.scss'
+import './index.css';
 
-const Index: FC = () => {
+const Index: FC = (props) => {
 	const navigate = useNavigate();
 	const location = useLocation();
-	const { formatMessage } = useLocale();
-	const [tags, activeTagId, addTag, removeTag, setActiveTag ] =
-		useStore((state) => [
+	const [tags, activeTagId, addTag, removeTag, setActiveTag] = useStore(
+		(state) => [
 			state.tags,
 			state.activeTagId,
 			state.addTag,
 			state.removeTag,
-			state.setActiveTag
-		]);
+			state.setActiveTag,
+		]
+	);
 	const { t, i18n } = useTranslation();
 
 	// Tabs change
@@ -91,7 +99,7 @@ const Index: FC = () => {
 	}, [tags, activeTagId]);
 
 	return (
-		<div id="pageTabs" style={{ background: '#fff', marginRight: '15px' }}>
+		<div id="semi-admin-tags-view">
 			<Tabs
 				type="card"
 				tabBarStyle={{ margin: 5 }}
@@ -100,6 +108,7 @@ const Index: FC = () => {
 				onTabClose={(targetKey) => onClose(targetKey as string)}
 				// tabBarExtraContent={<TagsViewAction />}
 				className="headertabs"
+				collapsible
 			>
 				{tags.map((tag) => (
 					<TabPane
@@ -107,7 +116,9 @@ const Index: FC = () => {
 						itemKey={tag.id}
 						key={tag.id}
 						closable={tag.closable}
-					/>
+					>
+						{props.children}
+					</TabPane>
 				))}
 			</Tabs>
 		</div>

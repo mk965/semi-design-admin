@@ -3,28 +3,26 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:52
- * @LastEditTime: 2022-02-06 11:25:25
+ * @LastEditTime: 2022-02-08 23:05:35
  * @Description: 全局状态
  */
 
 import { getLocalStorage } from '@/utils/storage';
 import create from 'zustand';
 
+type LocaleType = 'zh_CN' | 'en_GB' | 'ja_JP';
 export interface GlobalState {
-	locale: 'zh_CN' | 'en_US';
 	loading: boolean;
 	toogleLoading: (val: boolean) => void;
-	changeLocale: (val: 'zh_CN' | 'en_US') => void;
+	locale: LocaleType;
+	changeLocale: (val: LocaleType) => void;
 }
 
 const store = create<GlobalState>((set, get) => ({
-	locale: (getLocalStorage('semi_locale') as 'zh_CN' | 'en_US') || 'zh_CN',
 	loading: false,
 	toogleLoading: (val = false) => set({ loading: val }),
-	changeLocale: (val: 'zh_CN' | 'en_US') => {
-		if (val === 'zh_CN') set({ locale: 'zh_CN' });
-		else set({ locale: 'en_US' });
-	},
+	locale: (getLocalStorage('semi_locale') as LocaleType) || 'zh_CN',
+	changeLocale: (val: LocaleType) => {set({ locale: val });},
 }));
 
 const { getState, setState, subscribe, destroy } = store;

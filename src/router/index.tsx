@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 22:45:47
- * @LastEditTime: 2022-02-06 12:43:20
+ * @LastEditTime: 2022-02-12 14:47:52
  * @Description: 路由表
  */
 
@@ -144,6 +144,8 @@ import LayoutPage from '@/layouts/Default';
 const Dashboard = lazy(() => import('@/pages/Dashboard'));
 const Anlyanis = lazy(() => import('@/pages/Anlyanis'));
 const Docs = lazy(() => import('@/pages/Docs'));
+const Language = lazy(() => import('@/pages/Language'));
+const Guide = lazy(() => import('@/pages/Guide'));
 
 
 const routeList: RouteObject[] = [
@@ -162,7 +164,15 @@ const routeList: RouteObject[] = [
 			{
 				path: '/docs',
 				element:  <WrapperRouteComponent element={<Docs />} titleId="sider.docs" auth />
-			}
+			},
+			{
+				path: '/language',
+				element:  <WrapperRouteComponent element={<Language />} titleId="sider.i18n" auth />
+			},
+			{
+				path: '/guide',
+				element:  <WrapperRouteComponent element={<Guide />} titleId="sider.guide" auth />
+			},
 		]
 	}
 ]

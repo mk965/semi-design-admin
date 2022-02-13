@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Breadcrumb } from '@douyinfe/semi-ui';
 import menuList, { MenuItem } from '@/config/sider';
 import { useLocation } from 'react-router-dom';
-// import { useLocale } from '@/locales';
 import { useTranslation } from 'react-i18next';
 
 interface BreadcrumbItem {
@@ -42,7 +41,6 @@ const getBreadcrumbByPathName = (
 
 const Index: React.FC = () => {
 	const { pathname } = useLocation();
-	// const { formatMessage } = useLocale();
 	const { t } = useTranslation();
 	const [_, setState] = useState(1);
 
@@ -54,12 +52,14 @@ const Index: React.FC = () => {
 	}, [pathname]);
 
 	return (
-		<Breadcrumb>
-			{breadcrumbList.map((e) => {
-				// return <Item key={e.key}>{formatMessage({ id: e.title })}</Item>;
-				return <Item key={e.key}>{t(e.title)}</Item>;
-			})}
-		</Breadcrumb>
+		<div id="semi-admin-breadcrumb">
+			<Breadcrumb>
+				{breadcrumbList.map((e) => {
+					// return <Item key={e.key}>{formatMessage({ id: e.title })}</Item>;
+					return <Item key={e.key}>{t(e.title)}</Item>;
+				})}
+			</Breadcrumb>
+		</div>
 	);
 };
 

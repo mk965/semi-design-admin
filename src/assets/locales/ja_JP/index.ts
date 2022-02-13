@@ -2,16 +2,16 @@
  * @Author: Mengke
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
- * @Date: 2022-02-04 22:03:08
- * @LastEditTime: 2022-02-06 11:51:03
- * @Description: 英语翻译入口
+ * @Date: 2022-02-04 22:05:35
+ * @LastEditTime: 2022-02-06 11:57:42
+ * @Description: 中文翻译入口
  */
 import { global } from './global';
 import { sider } from './sider';
 
-const en_US = {
+const zh_CN = {
 	...global,
 	...sider,
 };
 
-export default en_US;
+export default zh_CN;

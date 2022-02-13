@@ -3,7 +3,6 @@ import { Layout, Nav } from '@douyinfe/semi-ui';
 import { IconSemiLogo } from '@douyinfe/semi-icons';
 import menuList, { MenuItem } from '@/config/sider';
 import { useLocation, useNavigate } from 'react-router';
-import { useLocale } from '@/locales';
 import useStore from '@/store/common/global';
 import { useTranslation } from 'react-i18next';
 // import '../../index.scss'
@@ -36,7 +35,6 @@ function findMenuByPath(menus: MenuItem[], path: string, keys: any[]): any {
 const Index: FC = () => {
 	const navigate = useNavigate();
 	const { pathname } = useLocation();
-	const { formatMessage } = useLocale();
 	const [openKeys, setOpenKeys] = useState<string[]>([]);
 	const [selectedKeys, setSelectedKeys] = useState<string[]>([]);
 	const locale = useStore((state) => state.locale);
