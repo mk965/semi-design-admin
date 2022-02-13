@@ -52,12 +52,14 @@ const Index: React.FC = () => {
 	}, [pathname]);
 
 	return (
-		<Breadcrumb>
-			{breadcrumbList.map((e) => {
-				// return <Item key={e.key}>{formatMessage({ id: e.title })}</Item>;
-				return <Item key={e.key}>{t(e.title)}</Item>;
-			})}
-		</Breadcrumb>
+		<div id="semi-admin-breadcrumb">
+			<Breadcrumb>
+				{breadcrumbList.map((e) => {
+					// return <Item key={e.key}>{formatMessage({ id: e.title })}</Item>;
+					return <Item key={e.key}>{t(e.title)}</Item>;
+				})}
+			</Breadcrumb>
+		</div>
 	);
 };
 

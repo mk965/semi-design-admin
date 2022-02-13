@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 import SuspendFallbackLoading from '@/components/fallback-loading';
 
-// import './index.scss';
+import './index.css';
 
 const { Content } = Layout;
 
