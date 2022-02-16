@@ -3,6 +3,11 @@ export const sider = {
 	'sider.docs': 'Docs',
 	'sider.i18n': 'I18n',
 	'sider.guide': 'Guide',
+	'sider.nested': 'Route nesting',
+	'sider.nested.menu1': 'Menu1',
+	'sider.nested.menu1.menu1-1': 'Menu1-1',
+	'sider.nested.menu1.menu1-2': 'Menu1-2',
+	'sider.nested.menu2': 'Menu2',
 	
 	'dashboard.workbeach': 'Workbeach',
 	'dashboard.anlyanis': 'Anlyanis',

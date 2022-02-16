@@ -3,6 +3,11 @@ export const sider = {
 	'sider.docs': 'ドキュメント',
 	'sider.i18n': '多言語',
 	'sider.guide': 'ブートページ',
+	'sider.nested': 'ルートネスト',
+	'sider.nested.menu1': 'Menu1',
+	'sider.nested.menu1.menu1-1': 'Menu1-1',
+	'sider.nested.menu1.menu1-2': 'Menu1-2',
+	'sider.nested.menu2': 'Menu2',
 
 	'dashboard.workbeach': 'ワークベンチ',
 	'dashboard.anlyanis': '分析ページ',

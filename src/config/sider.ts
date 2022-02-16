@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:23
- * @LastEditTime: 2022-02-12 14:52:04
+ * @LastEditTime: 2022-02-16 22:51:52
  * @Description: 侧边栏配置
  */
 
@@ -12,6 +12,7 @@ import {
 	IconArticle,
 	IconLanguage,
 	IconQuote,
+	IconMenu,
 	IconEdit,
 	IconGridRectangle,
 	IconApps,
@@ -53,6 +54,34 @@ const MENU_CONFIG: MenuItem[] = [
 		text: 'sider.guide',
 		icon: IconQuote,
 		path: '/guide',
+	},
+	{
+		itemKey: '5-0',
+		text: 'sider.nested',
+		icon: IconMenu,
+		items: [
+			{
+				itemKey: '5-1',
+				text: 'sider.nested.menu1',
+				items: [
+					{
+						itemKey: '5-1-1',
+						text: 'sider.nested.menu1.menu1-1',
+						path: '/nested/menu1/menu1-1',
+					},
+					{
+						itemKey: '5-1-2',
+						text: 'sider.nested.menu1.menu1-2',
+						path: '/nested/menu1/menu1-2',
+					},
+				]
+			},
+			{
+				itemKey: '5-2',
+				text: 'sider.nested.menu2',
+				path: '/nested/menu2',
+			}
+		]
 	},
 
 

@@ -3,6 +3,12 @@ export const sider = {
 	'sider.docs': '文档',
 	'sider.i18n': '国际化',
 	'sider.guide': '引导页',
+	'sider.nested': '路由嵌套',
+	'sider.nested.menu1': 'Menu1',
+	'sider.nested.menu1.menu1-1': 'Menu1-1',
+	'sider.nested.menu1.menu1-2': 'Menu1-2',
+	'sider.nested.menu2': 'Menu2',
+
 
 	'dashboard.workbeach': '工作台',
 	'dashboard.anlyanis': '分析页',

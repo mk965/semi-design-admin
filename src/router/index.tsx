@@ -3,14 +3,17 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 22:45:47
- * @LastEditTime: 2022-02-12 14:47:52
+ * @LastEditTime: 2022-02-16 22:45:27
  * @Description: 路由表
  */
 
-import React, { lazy, FC } from 'react'
-import { RouteObject } from 'react-router'
-import { useRoutes } from 'react-router-dom'
-import { WrapperRouteComponent, WrapperRouteWithOutLayoutComponent } from './config'
+import React, { lazy, FC } from 'react';
+import { Navigate, RouteObject } from 'react-router';
+import { useRoutes } from 'react-router-dom';
+import {
+	WrapperRouteComponent,
+	WrapperRouteWithOutLayoutComponent,
+} from './config';
 // import LoginPage from '@pages/login'
 import LayoutPage from '@/layouts/Default';
 // import Empty from '@components/empty'
@@ -147,6 +150,10 @@ const Docs = lazy(() => import('@/pages/Docs'));
 const Language = lazy(() => import('@/pages/Language'));
 const Guide = lazy(() => import('@/pages/Guide'));
 
+const Menu1 = lazy(() => import('@/pages/Nested/Menu1/index'));
+const Menu1_1 = lazy(() => import('@/pages/Nested/Menu1/Menu1-1'));
+const Menu1_2 = lazy(() => import('@/pages/Nested/Menu1/Menu1-2'));
+const Menu2 = lazy(() => import('@/pages/Nested/Menu2'));
 
 const routeList: RouteObject[] = [
 	{
@@ -155,31 +162,96 @@ const routeList: RouteObject[] = [
 		children: [
 			{
 				path: '/dashboard',
-				element:  <WrapperRouteComponent element={<Dashboard />} titleId="sider.dashboard" auth />
+				element: (
+					<WrapperRouteComponent
+						element={<Dashboard />}
+						titleId="sider.dashboard"
+						auth
+					/>
+				),
 			},
 			{
 				path: '/anlyanis',
-				element:  <WrapperRouteComponent element={<Anlyanis />} titleId="分析页" auth />
+				element: (
+					<WrapperRouteComponent element={<Anlyanis />} titleId="分析页" auth />
+				),
 			},
 			{
 				path: '/docs',
-				element:  <WrapperRouteComponent element={<Docs />} titleId="sider.docs" auth />
+				element: (
+					<WrapperRouteComponent element={<Docs />} titleId="sider.docs" auth />
+				),
 			},
 			{
 				path: '/language',
-				element:  <WrapperRouteComponent element={<Language />} titleId="sider.i18n" auth />
+				element: (
+					<WrapperRouteComponent
+						element={<Language />}
+						titleId="sider.i18n"
+						auth
+					/>
+				),
 			},
 			{
 				path: '/guide',
-				element:  <WrapperRouteComponent element={<Guide />} titleId="sider.guide" auth />
+				element: (
+					<WrapperRouteComponent
+						element={<Guide />}
+						titleId="sider.guide"
+						auth
+					/>
+				),
 			},
-		]
-	}
-]
+			{
+				path: '/nested',
+				children: [
+					{
+						path: '/nested',
+						element: <Navigate to="/nested/menu1" />,
+					},
+					{
+						path: '/nested/menu1',
+						element: (
+							<WrapperRouteComponent
+								element={<Menu1 />}
+								titleId="sider.menu1"
+							/>
+						),
+						children: [
+							{
+								path: '/nested/menu1/menu1-1',
+								element: (
+									<WrapperRouteComponent
+										element={<Menu1_1 />}
+										titleId="sider.menu1-1"
+									/>
+								),
+							},
+							{
+								path: '/nested/menu1/menu1-2',
+								element: (
+									<WrapperRouteComponent
+										element={<Menu1_2 />}
+										titleId="sider.menu1-2"
+									/>
+								),
+							},
+						],
+					},
+					{
+						path: '/nested/menu2',
+						element: (<WrapperRouteComponent element={<Menu2 />} titleId="sider.menu2" />
+						),
+					},
+				],
+			},
+		],
+	},
+];
 
 const RenderRouter: FC = () => {
-	const element = useRoutes(routeList)
-	return element
-}
+	const element = useRoutes(routeList);
+	return element;
+};
 
-export default RenderRouter
+export default RenderRouter;
