@@ -40,26 +40,13 @@ const Index: FC = () => {
 	const locale = useStore((state) => state.locale);
 	const { t, i18n } = useTranslation();
 
-	const navList = useMemo(() => {
-		return menuList.map((e) => {
-			return {
-				...e,
-				// text: formatMessage({ id: e.text }),
-				text: t(e.text),
-				icon: e?.icon ? renderIcon(e.icon) : null,
-				items: e?.items
-					? e.items.map((m) => {
-							return {
-								...m,
-								// text: formatMessage({ id: m.text }),
-								text: t(m.text),
-								icon: m.icon ? renderIcon(m.icon) : null,
-							};
-					  })
-					: [],
-			};
-		});
-	}, [menuList, locale, i18n.language]);
+	const navList = (list) =>
+		list.map((m) => ({
+			...m,
+			text: t(m.text),
+			icon: m.icon ? renderIcon(m.icon) : null,
+			items: navList(m.items || []),
+		}));
 
 	const onSelect = (data) => {
 		setSelectedKeys([...data.selectedKeys]);
@@ -79,7 +66,7 @@ const Index: FC = () => {
 	return (
 		<Sider style={{ backgroundColor: 'var(--semi-color-bg-1)' }}>
 			<Nav
-				items={navList}
+				items={navList(menuList)}
 				openKeys={openKeys}
 				selectedKeys={selectedKeys}
 				onSelect={onSelect}
