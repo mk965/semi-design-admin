@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 22:45:47
- * @LastEditTime: 2022-02-16 22:45:27
+ * @LastEditTime: 2022-02-17 22:49:07
  * @Description: 路由表
  */
 
@@ -155,6 +155,8 @@ const Menu1_1 = lazy(() => import('@/pages/Nested/Menu1/Menu1-1'));
 const Menu1_2 = lazy(() => import('@/pages/Nested/Menu1/Menu1-2'));
 const Menu2 = lazy(() => import('@/pages/Nested/Menu2'));
 
+const Icons = lazy(() => import('@/pages/Icons'));
+
 const routeList: RouteObject[] = [
 	{
 		path: '/',
@@ -183,21 +185,31 @@ const routeList: RouteObject[] = [
 				),
 			},
 			{
-				path: '/language',
-				element: (
-					<WrapperRouteComponent
-						element={<Language />}
-						titleId="sider.i18n"
-						auth
-					/>
-				),
-			},
-			{
 				path: '/guide',
 				element: (
 					<WrapperRouteComponent
 						element={<Guide />}
 						titleId="sider.guide"
+						auth
+					/>
+				),
+			},
+			{
+				path: '/icon',
+				element: (
+					<WrapperRouteComponent
+						element={<Icons />}
+						titleId="sider.icon"
+						auth
+					/>
+				),
+			},
+			{
+				path: '/language',
+				element: (
+					<WrapperRouteComponent
+						element={<Language />}
+						titleId="sider.i18n"
 						auth
 					/>
 				),
