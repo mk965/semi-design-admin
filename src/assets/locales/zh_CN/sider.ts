@@ -2,6 +2,7 @@ export const sider = {
 	'sider.dashboard': '仪表板',
 	'sider.docs': '文档',
 	'sider.i18n': '国际化',
+	'sider.icon': '图标',
 	'sider.guide': '引导页',
 	'sider.nested': '路由嵌套',
 	'sider.nested.menu1': 'Menu1',

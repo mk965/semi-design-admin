@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:23
- * @LastEditTime: 2022-02-16 22:51:52
+ * @LastEditTime: 2022-02-17 22:27:58
  * @Description: 侧边栏配置
  */
 
@@ -13,6 +13,7 @@ import {
 	IconLanguage,
 	IconQuote,
 	IconMenu,
+	IconEmoji,
 	IconEdit,
 	IconGridRectangle,
 	IconApps,
@@ -44,16 +45,22 @@ const MENU_CONFIG: MenuItem[] = [
 		path: '/docs',
 	},
 	{
-		itemKey: '3-0',
-		text: 'sider.i18n',
-		icon: IconLanguage,
-		path: '/language',
-	},
-	{
 		itemKey: '4-0',
 		text: 'sider.guide',
 		icon: IconQuote,
 		path: '/guide',
+	},
+	{
+		itemKey: '6-0',
+		text: 'sider.icon',
+		icon: IconEmoji,
+		path: '/icon'
+	},
+	{
+		itemKey: '3-0',
+		text: 'sider.i18n',
+		icon: IconLanguage,
+		path: '/language',
 	},
 	{
 		itemKey: '5-0',

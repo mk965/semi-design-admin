@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-12 14:46:56
- * @LastEditTime: 2022-02-13 23:19:14
+ * @LastEditTime: 2022-02-17 22:50:24
  * @Description: Guide Page
  */
 
@@ -35,7 +35,7 @@ export default React.memo(
 					style={{ marginBottom: '24px' }}
 					title={
 						<div
-							style={{ fontWeight: 600, fontSize: '14px', lineHeight: '30px' }}
+							style={{ fontWeight: 600, fontSize: '14px', lineHeight: '20px' }}
 						>
 							driver.js
 						</div>
