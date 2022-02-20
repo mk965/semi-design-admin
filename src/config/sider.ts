@@ -83,6 +83,12 @@ const MENU_CONFIG: MenuItem[] = [
 			}
 		]
 	},
+	{
+		itemKey: '6-0',
+		text: 'sider.icons',
+		icon: IconArticle,
+		path: '/icons',
+	},
 
 
 	{

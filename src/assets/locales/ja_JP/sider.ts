@@ -1,6 +1,7 @@
 export const sider = {
 	'sider.dashboard': 'けいきばん',
 	'sider.docs': 'ドキュメント',
+	'sider.icons': 'アイコン',
 	'sider.i18n': '多言語',
 	'sider.guide': 'ブートページ',
 	'sider.nested': 'ルートネスト',

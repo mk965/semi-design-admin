@@ -147,6 +147,7 @@ import LayoutPage from '@/layouts/Default';
 const Dashboard = lazy(() => import('@/pages/Dashboard'));
 const Anlyanis = lazy(() => import('@/pages/Anlyanis'));
 const Docs = lazy(() => import('@/pages/Docs'));
+const Icons = lazy(() => import('@/pages/Icons'));
 const Language = lazy(() => import('@/pages/Language'));
 const Guide = lazy(() => import('@/pages/Guide'));
 
@@ -180,6 +181,12 @@ const routeList: RouteObject[] = [
 				path: '/docs',
 				element: (
 					<WrapperRouteComponent element={<Docs />} titleId="sider.docs" auth />
+				),
+			},
+			{
+				path: '/icons',
+				element: (
+					<WrapperRouteComponent element={<Icons />} titleId="sider.icons" auth />
 				),
 			},
 			{
