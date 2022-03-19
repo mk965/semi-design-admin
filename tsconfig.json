@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-06 11:31:08
- * @LastEditTime: 2022-02-08 23:03:39
+ * @LastEditTime: 2022-03-15 23:09:18
  * @Description: Modify here please
  */
 
@@ -30,7 +30,7 @@
             "@/*": ["src/*"],
             "@mock/*": ["mock/*"]
         },
-        "types": ["vite/client"]
+        "types": ["vite/client", "vite-plugin-svgr/client"]
     },
     "include": ["./src"]
 }
