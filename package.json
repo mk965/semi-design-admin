@@ -21,7 +21,8 @@
     "@vitejs/plugin-react": "^1.1.4",
     "path": "^0.12.7",
     "sass": "^1.49.7",
-    "vite": "^2.7.13"
+    "vite": "^2.7.13",
+    "vite-plugin-svgr": "^1.0.1"
   },
   "dependencies": {
     "@douyinfe/semi-ui": "^2.3.1",
