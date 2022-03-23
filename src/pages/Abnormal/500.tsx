@@ -2,14 +2,14 @@
  * @Author: Mengke
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
- * @Date: 2022-03-22 23:43:08
- * @LastEditTime: 2022-03-23 22:15:40
- * @Description: 404 page
+ * @Date: 2022-03-23 22:16:27
+ * @LastEditTime: 2022-03-23 22:19:05
+ * @Description: 500 oage
  */
 
 import React from "react";
 import { Typography } from '@douyinfe/semi-ui';
-import { IllustrationNotFound, IllustrationNotFoundDark } from '@douyinfe/semi-illustrations';
+import { IllustrationFailure, IllustrationFailureDark } from '@douyinfe/semi-illustrations';
 import useStore from "@/store/common/global";
 import styles from './index.module.less';
 
@@ -19,10 +19,10 @@ export default () => {
     return (
         <div className={styles.pageWarp} style={{ backgroundColor: 'var(--semi-color-bg-1)' }}>
             {
-                darkMode ? <IllustrationNotFoundDark /> : <IllustrationNotFound />
+                darkMode ? <IllustrationFailureDark /> : <IllustrationFailure />
             }
             <div className={styles.pageTitle}>
-                <Title>404</Title>
+                <Title>500</Title>
             </div>
         </div>
     )

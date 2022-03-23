@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:52
- * @LastEditTime: 2022-03-23 21:32:31
+ * @LastEditTime: 2022-03-23 22:11:21
  * @Description: 全局状态
  */
 
@@ -22,11 +22,11 @@ export interface GlobalState {
 
 const store = create<GlobalState>((set, get) => ({
 	loading: false,
-	toogleLoading: (val = false) => set({ loading: val }),
+	toogleLoading: (val = false) => set(() => ({ loading: val })),
 	locale: (getLocalStorage('semi_locale') as LocaleType) || 'zh_CN',
-	changeLocale: (val: LocaleType) => set({ locale: val }),
+	changeLocale: (val: LocaleType) => set(() => ({ locale: val })),
 	darkMode: false,
-	changeDarkMode: (val: Boolean) => set({ darkMode: val }),
+	changeDarkMode: (val: Boolean) => set(() => ({ darkMode: val })),
 }));
 
 const { getState, setState, subscribe, destroy } = store;
