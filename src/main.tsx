@@ -5,7 +5,7 @@ import '@/config/i18n';
 
 ReactDOM.render(
 	// <React.StrictMode>
-		<App />,
+	<App />,
 	// </React.StrictMode>,
 	document.getElementById('root')
 );

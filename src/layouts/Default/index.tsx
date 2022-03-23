@@ -14,7 +14,7 @@ const Index: React.FC = () => {
 	return (
 		<Layout className="layout-page">
 			<Sider />
-			<Layout>
+			<Layout style={{ backgroundColor: 'var(--semi-color-bg-1)' }} >
 				<Header />
 				<Content className="layout-content">
 					<Suspense fallback={<SuspendFallbackLoading message="正在加载中" />}>

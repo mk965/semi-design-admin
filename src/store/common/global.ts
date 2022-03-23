@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:52
- * @LastEditTime: 2022-02-08 23:05:35
+ * @LastEditTime: 2022-03-23 21:32:31
  * @Description: 全局状态
  */
 
@@ -16,13 +16,17 @@ export interface GlobalState {
 	toogleLoading: (val: boolean) => void;
 	locale: LocaleType;
 	changeLocale: (val: LocaleType) => void;
+	darkMode: Boolean,
+	changeDarkMode: (val: Boolean) => void;
 }
 
 const store = create<GlobalState>((set, get) => ({
 	loading: false,
 	toogleLoading: (val = false) => set({ loading: val }),
 	locale: (getLocalStorage('semi_locale') as LocaleType) || 'zh_CN',
-	changeLocale: (val: LocaleType) => {set({ locale: val });},
+	changeLocale: (val: LocaleType) => set({ locale: val }),
+	darkMode: false,
+	changeDarkMode: (val: Boolean) => set({ darkMode: val }),
 }));
 
 const { getState, setState, subscribe, destroy } = store;
