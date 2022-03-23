@@ -25,17 +25,18 @@ import Tags from '../Tags';
 const { Header } = Layout;
 
 const Index: FC = () => {
-	const locale = useStore((state) => state.locale);
-	const changeLocale = useStore((state) => state.changeLocale);
+	const changeDarkMode = useStore((state) => state.changeDarkMode);
 	const { t, i18n } = useTranslation();
 
 	const [isDark, setIsDark] = useState(false);
 	const switchMode = () => {
 		const body = document.body;
 		if (body.hasAttribute('theme-mode')) {
+			changeDarkMode(false);
 			body.removeAttribute('theme-mode');
 			setIsDark(false);
 		} else {
+			changeDarkMode(true);
 			body.setAttribute('theme-mode', 'dark');
 			setIsDark(true);
 		}
@@ -48,7 +49,6 @@ const Index: FC = () => {
 
 	const selectLocale = (locale: 'zh_CN' | 'en_GB') => {
 		i18n.changeLanguage(locale);
-		// changeLocale(locale);
 		localStorage.setItem('semi_locale', locale);
 	};
 
