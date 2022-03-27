@@ -1,5 +1,6 @@
-import React, { FC } from 'react'
-import { Spin, Banner } from '@douyinfe/semi-ui'
+import React, { FC } from 'react';
+import { Spin, Banner } from '@douyinfe/semi-ui';
+import { useTranslation } from 'react-i18next';
 
 interface FallbackMessageProps {
 	message: string
@@ -7,8 +8,9 @@ interface FallbackMessageProps {
 }
 
 const SuspendFallbackLoading: FC<FallbackMessageProps> = ({ message, description }) => {
+	const { t } = useTranslation();
 	return (
-		<Spin tip="正在加载中...">
+		<Spin tip={t('loading')}>
 			<Banner
 				fullMode={false}
 				type="info"
@@ -16,6 +18,7 @@ const SuspendFallbackLoading: FC<FallbackMessageProps> = ({ message, description
 				icon={null}
 				closeIcon={null}
 				description={<div>{description}</div>}
+				style={{minHeight: '100px'}}
 			/>
 		</Spin>
 	)

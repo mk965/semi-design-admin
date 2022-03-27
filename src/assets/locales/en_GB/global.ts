@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-06 11:48:28
- * @LastEditTime: 2022-02-08 23:48:16
+ * @LastEditTime: 2022-03-25 22:40:23
  * @Description: 全局翻译
  */
 export const global = {
@@ -18,4 +18,6 @@ export const global = {
 	switchChinese: 'Switch to Chinese',
 	switchEnglish: 'Switch To English',
 	switchJapanese: 'Switch to Japanese',
+
+	loading: 'Loading'
 };

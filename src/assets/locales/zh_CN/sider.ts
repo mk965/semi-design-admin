@@ -30,9 +30,11 @@ export const sider = {
 	'detail.basic': '基础详情页',
 	'detail.advanced': '高级详情页',
 
-	'result': '结果页',
-	'result.success': '成功页',
-	'result.failed': '失败页',
+	'result': '结果',
+	'result.success': 'Success',
+	'result.info': 'Info',
+	'result.warning': 'Warning',
+	'result.failed': 'Failed',
 
 	'abnormal': '异常页',
 	'abnormal.403': '403',

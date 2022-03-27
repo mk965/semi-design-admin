@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 22:45:47
- * @LastEditTime: 2022-03-23 22:21:06
+ * @LastEditTime: 2022-03-27 17:01:53
  * @Description: 路由表
  */
 
@@ -161,6 +161,7 @@ const Menu2 = lazy(() => import('@/pages/Nested/Menu2'));
 const Abnormal403 = lazy(() => import('@/pages/Abnormal/403'));
 const Abnormal404 = lazy(() => import('@/pages/Abnormal/404'));
 const Abnormal500 = lazy(() => import('@/pages/Abnormal/500'));
+const Result = lazy(() => import('@/pages/Result'));
 
 const routeList: RouteObject[] = [
 	{
@@ -277,6 +278,10 @@ const routeList: RouteObject[] = [
 						element: (<WrapperRouteComponent element={<Abnormal500 />} titleId="sider.abnormal.500" />),
 					},
 				]
+			},
+			{
+				path: '/result',
+				element: (<WrapperRouteComponent element={<Result />} titleId="sider.result" />),
 			}
 		],
 	},

@@ -1,0 +1,21 @@
+.codeBox {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 16px;
+    border: 1px solid var(--semi-color-border);
+    border-radius: 2px;
+    transition: all .2s;
+    .desc {
+        margin-top: 24px;
+        padding: 24px 40px;
+        background: var(--semi-color-default);
+        > p {
+            margin-bottom: 1em;
+        }
+        .errorIcon {
+            color: var(--semi-color-danger);
+            vertical-align: middle;
+        }
+    }
+}

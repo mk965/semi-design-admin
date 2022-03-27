@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:23
- * @LastEditTime: 2022-02-17 22:27:58
+ * @LastEditTime: 2022-03-27 17:02:57
  * @Description: 侧边栏配置
  */
 
@@ -162,18 +162,7 @@ const MENU_CONFIG: MenuItem[] = [
 		itemKey: '5',
 		text: 'result',
 		icon: IconTickCircle,
-		items: [
-			{
-				itemKey: '5-1',
-				text: 'result.success',
-				path: '/result/success',
-			},
-			{
-				itemKey: '5-2',
-				text: 'result.failed',
-				path: '/result/failed',
-			},
-		],
+		path: '/result' ,
 	},
 	{
 		itemKey: '6',

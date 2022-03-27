@@ -5,19 +5,21 @@ import Sider from '../components/Sider';
 import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 import SuspendFallbackLoading from '@/components/fallback-loading';
+import { useTranslation } from 'react-i18next';
 
 import './index.css';
 
 const { Content } = Layout;
 
 const Index: React.FC = () => {
+	const { t } = useTranslation();
 	return (
 		<Layout className="layout-page">
 			<Sider />
 			<Layout style={{ backgroundColor: 'var(--semi-color-bg-1)' }} >
 				<Header />
 				<Content className="layout-content">
-					<Suspense fallback={<SuspendFallbackLoading message="正在加载中" />}>
+					<Suspense fallback={<SuspendFallbackLoading message={t('loading')} />}>
 						<Outlet />
 					</Suspense>
 				</Content>
