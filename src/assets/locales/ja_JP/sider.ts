@@ -29,9 +29,11 @@ export const sider = {
 	'detail.basic': '基礎詳細ページ',
 	'detail.advanced': '詳細ページ',
 
-	'result': '結果ページ',
-	'result.success': '成功ページ',
-	'result.failed': '失敗ページ',
+	'result': '結果',
+	'result.success': 'Success',
+	'result.info': 'Info',
+	'result.warning': 'Warning',
+	'result.failed': 'Failed',
 
 	'abnormal': '例外ページ',
 	'abnormal.403': '403',

@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-06 11:51:36
- * @LastEditTime: 2022-02-08 23:48:10
+ * @LastEditTime: 2022-03-25 22:39:54
  * @Description: 日语翻译
  */
 
@@ -19,4 +19,6 @@ export const global = {
 	switchChinese: '中国語に切り替え',
 	switchEnglish: '英語に切り替え',
 	switchJapanese: '日本語に切り替え',
+
+	loading: '読み込み'
 };

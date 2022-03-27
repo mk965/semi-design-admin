@@ -1,0 +1,43 @@
+.semiResult {
+    padding: 48px 32px;
+    .resultIcon {
+        margin-bottom: 24px;
+        text-align: center;
+        > span {
+            font-size: 72px;
+        }
+        .successIcon {
+            color: var(--semi-color-success);
+        }
+        .infoIcon {
+            color: var(--semi-color-info);
+        }
+        .warningIcon {
+            color: var(--semi-color-warning);
+        }
+        .failedIcon {
+            color: var(--semi-color-danger);
+        }
+    }
+    .resultTitle {
+        line-height: 1.8;
+        text-align: center;
+    }
+    .resultSubTitle {
+        line-height: 1.6;
+        text-align: center;
+        font-weight: normal;
+    }
+    .resultExtra {
+        margin: 24px 0 0;
+        text-align: center;
+        > * {
+            margin-right: 8px;
+        }
+    }
+    .semiResultContent {
+        margin-top: 24px;
+        padding: 24px 40px;
+        background: var(--semi-color-default);
+    }
+}

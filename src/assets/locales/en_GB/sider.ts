@@ -31,6 +31,8 @@ export const sider = {
 
 	'result': 'Result',
 	'result.success': 'Success',
+	'result.info': 'Info',
+	'result.warning': 'Warning',
 	'result.failed': 'Failed',
 
 	'abnormal': 'Abnormal',

@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 22:45:47
- * @LastEditTime: 2022-02-06 12:34:40
+ * @LastEditTime: 2022-03-26 22:33:53
  * @Description: 路由配置
  */
 
@@ -24,11 +24,7 @@ const PublicRoute = (props) => {
 	return props.element;
 };
 
-const WrapperRouteComponent: FC<WrapperRouteProps> = ({
-	titleId,
-	auth,
-	...props
-}) => {
+const WrapperRouteComponent: FC<WrapperRouteProps> = ({ titleId, auth, ...props }) => {
 	const { t } = useTranslation();
 	const WitchRoute = auth ? PrivateRoute : PublicRoute;
 	if (titleId) {
@@ -37,18 +33,14 @@ const WrapperRouteComponent: FC<WrapperRouteProps> = ({
 	return <WitchRoute {...props} />;
 };
 
-const WrapperRouteWithOutLayoutComponent: FC<WrapperRouteProps> = ({
-	titleId,
-	auth,
-	...props
-}) => {
+const WrapperRouteWithOutLayoutComponent: FC<WrapperRouteProps> = ({ titleId, auth, ...props }) => {
+	const { t } = useTranslation();
 	if (titleId) {
-		const { t } = useTranslation();
 		document.title = t(titleId);
 	}
 
 	return (
-		<Suspense fallback={<SuspendFallbackLoading message="正在加载中" />}>
+		<Suspense fallback={<SuspendFallbackLoading message={t('loading')} />}>
 			{props.element}
 		</Suspense>
 	);
