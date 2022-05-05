@@ -63,8 +63,14 @@ const Index: FC = () => {
 		setOpenKeys(Array.from(new Set([...openKeys, ...keys])));
 	}, [pathname]);
 
+
+	const [collapsed, setCollapsed] = useState(false);
+	const onbreakpoint = (screen, bool) => {
+		// console.log(screen, bool);
+		setCollapsed(!bool);
+    };
 	return (
-		<Sider style={{ backgroundColor: 'var(--semi-color-bg-1)' }}>
+		<Sider style={{ backgroundColor: 'var(--semi-color-bg-1)' }} breakpoint={['lg']} onBreakpoint={onbreakpoint} >
 			<Nav
 				items={navList(menuList)}
 				openKeys={openKeys}
@@ -74,11 +80,12 @@ const Index: FC = () => {
 				style={{ maxWidth: 220, height: '100%' }}
 				header={{
 					logo: <IconSemiLogo style={{ fontSize: 36 }} />,
-					text: 'Semi Admin',
+					text: 'Semi Admin Pro',
 				}}
 				footer={{
 					collapseButton: true,
 				}}
+				isCollapsed={collapsed}
 			/>
 		</Sider>
 	);

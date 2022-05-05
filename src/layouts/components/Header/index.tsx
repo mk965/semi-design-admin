@@ -33,12 +33,14 @@ const Index: FC = () => {
 		const body = document.body;
 		if (body.hasAttribute('theme-mode')) {
 			changeDarkMode(false);
-			body.removeAttribute('theme-mode');
 			setIsDark(false);
+			body.removeAttribute('theme-mode');
+			window.localStorage.setItem('semi-theme', 'light');
 		} else {
 			changeDarkMode(true);
-			body.setAttribute('theme-mode', 'dark');
 			setIsDark(true);
+			body.setAttribute('theme-mode', 'dark');
+			window.localStorage.setItem('semi-theme', 'dark');
 		}
 	};
 

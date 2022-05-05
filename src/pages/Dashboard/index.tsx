@@ -3,54 +3,42 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-03 21:43:12
- * @LastEditTime: 2022-02-06 11:57:15
- * @Description: Modify here please
+ * @LastEditTime: 2022-05-05 22:24:12
+ * @Description: 仪表盘工作台
  */
-// import React from 'react'
-// import { Empty } from '@douyinfe/semi-ui'
-// import { IllustrationNoAccess, IllustrationNoAccessDark } from '@douyinfe/semi-illustrations'
 
-// const Index: React.FC = () => {
-// 	return (
-// 		<Empty
-// 			title={'403'}
-// 			image={<IllustrationNoAccess style={{ width: 400, height: 400 }} />}
-// 			darkModeImage={<IllustrationNoAccessDark style={{ width: 400, height: 400 }} />}
-// 			description="403 无权限访问"
-// 		></Empty>
-// 	)
-// }
-
-// export default Index
-
-
-
-import { Button } from '@douyinfe/semi-ui';
+import { Card } from '@douyinfe/semi-ui';
 import React, { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
+import styles from './index.module.less';
+import Banner from './components/Banner';
+import DataPanel from './components/DataPanel';
 
-function MyComponent() {
-  const { t, i18n } = useTranslation();
-
-
-  return <>
-    <h1>{t('Welcome to React')}</h1>
-    {t('zh_CN')}
-    <br/>
-    {t('methods.renderProps')}
-    <br/>
-    <Button onClick={() => i18n.changeLanguage('zh_CN')}>{t('切换到中文')}</Button>
-    <Button onClick={() => i18n.changeLanguage('en_GB')}>{t('切换到英语')}</Button>
-    <Button onClick={() => i18n.changeLanguage('ja')}>{t('切换到日语')}</Button>
-  </>
-}
+// function MyComponent() {
+//   return (
+//     <div className={styles.container}>
+//       <div className={styles.leftSide}></div>
+//       <div className={styles.rightSide}></div>
+//     </div>
+//   )
+// }
 
 // i18n translations might still be loaded by the http backend
 // use react's Suspense
-export default function App() {
+export default () => {
   return (
     <Suspense fallback="loading">
-      <MyComponent />
+      {/* <MyComponent /> */}
+      <div className={styles.container}>
+        <div className={styles.leftSide}>
+          <div className={styles.panel}>
+            <Banner />
+            <DataPanel />
+            {/* <ContentChart />? */}
+          </div>
+        </div>
+        <div className={styles.rightSide}>2</div>
+      </div>
     </Suspense>
   );
 }

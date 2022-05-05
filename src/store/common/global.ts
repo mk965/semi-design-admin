@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 23:10:52
- * @LastEditTime: 2022-03-23 22:11:21
+ * @LastEditTime: 2022-05-04 21:52:32
  * @Description: 全局状态
  */
 
@@ -18,6 +18,10 @@ export interface GlobalState {
 	changeLocale: (val: LocaleType) => void;
 	darkMode: Boolean,
 	changeDarkMode: (val: Boolean) => void;
+	hideMenu: Boolean,
+	toggleMenu: (val: Boolean) => void;
+	device: String,
+	toggleDevice: (val: String) => void;
 }
 
 const store = create<GlobalState>((set, get) => ({
@@ -27,6 +31,10 @@ const store = create<GlobalState>((set, get) => ({
 	changeLocale: (val: LocaleType) => set(() => ({ locale: val })),
 	darkMode: false,
 	changeDarkMode: (val: Boolean) => set(() => ({ darkMode: val })),
+	hideMenu: true,
+	toggleMenu: (val: Boolean) => set(() => ({ hideMenu: val })),
+	device: 'desktop',
+	toggleDevice: (val: String) => set(() => ({ device: val })),
 }));
 
 const { getState, setState, subscribe, destroy } = store;

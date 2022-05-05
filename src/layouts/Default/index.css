@@ -1,3 +1,4 @@
 .layout-content {
-    padding: 24px;
+    background-color: var(--semi-color-tertiary-light-default);
+    padding: 16px 20px;
 }
