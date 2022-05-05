@@ -369,38 +369,38 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@douyinfe/semi-animation-react@2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-animation-react/-/semi-animation-react-2.3.1.tgz#96f3cc427411567cdab85dc260aa5bc72258b1bd"
-  integrity sha512-7rXD60qnRbWQK9et1LfHmoDaL8icavO+gozAMVNYvIsJqz4UPsJdvqAz2tJ0aZRoYzWi39V5mxFnXdzzbcAzMQ==
+"@douyinfe/semi-animation-react@2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-animation-react/-/semi-animation-react-2.9.1.tgz#f2e4c6ef7899729ee6145edf0579598ba195bfdd"
+  integrity sha512-1tLOJab4lwMCeVy7JwtCWcOowe4SKEWA8rhsRpH1/OBskRLW6c+LlHQRRBZJpPisxlqbnWhW8NHJpYyj6vedUg==
   dependencies:
     "@babel/runtime-corejs3" "^7.15.4"
-    "@douyinfe/semi-animation" "2.3.1"
-    "@douyinfe/semi-animation-styled" "2.3.1"
+    "@douyinfe/semi-animation" "2.9.1"
+    "@douyinfe/semi-animation-styled" "2.9.1"
     classnames "^2.2.6"
 
-"@douyinfe/semi-animation-styled@2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-animation-styled/-/semi-animation-styled-2.3.1.tgz#ec86256c381eda0356b3e6dbf6cf63fabb6a5ee3"
-  integrity sha512-++3ngSanf1NroWQoZ8ssDk55Wz1Ib6G7m+Ee/RmOnL5VzvhyhLnkgjZoaWz6oIHbk0TQ764+GoBzfF+ZsYtvrQ==
+"@douyinfe/semi-animation-styled@2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-animation-styled/-/semi-animation-styled-2.9.1.tgz#0a4a3c521626118b209604b2d6447fbcaa4839a4"
+  integrity sha512-P97VHzphgMcJztPdymMBHJJDiLn2DR3AcRgC3NnP7HTXh2tol+KzVuPl5jG5T2OjeJjZXViVe9M2xnHxL8FBCg==
   dependencies:
     "@babel/runtime-corejs3" "^7.15.4"
 
-"@douyinfe/semi-animation@2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-animation/-/semi-animation-2.3.1.tgz#df021f397ca2546162b74c2d085ea4293d928755"
-  integrity sha512-sDd9hSTGCvSb6JPls0XgrLXPMRjjjn1bWbW6Y1XJcdge/KPEyL7zYo216yq89YVUsbuhwtfzfcKCfK+aIE7F5g==
+"@douyinfe/semi-animation@2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-animation/-/semi-animation-2.9.1.tgz#4345fd86823b51e7c6fb5e9079d8f5c3ffe608f8"
+  integrity sha512-Ch44XbLrvsmL1vG+iY2XU2C0SGi1m6dU4I4ZzRt+hzht8nTiqg+uNTXJI2+3JyTrGPOG6vnUK0AYG00DUksljQ==
   dependencies:
     "@babel/runtime-corejs3" "^7.15.4"
     bezier-easing "^2.1.0"
 
-"@douyinfe/semi-foundation@2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-foundation/-/semi-foundation-2.3.1.tgz#4d6d46350f392b0d247d85764d50c955d3ca9656"
-  integrity sha512-0EgaAnDFsesSSDHhyw1OfE/pgRKACvHUs3QIcax5V32t3bJ3q6C7BISHxHFxmP9oBTlYTZ5kZJCcJ+ECweYs2Q==
+"@douyinfe/semi-foundation@2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-foundation/-/semi-foundation-2.9.1.tgz#1300bb97d6ceb92274ca4c9e6c66c5c16dc284ea"
+  integrity sha512-2idCqqs3bvs/xuKqNir2YvxT+gvMFqC8GY2QOnWvCWvIGTI1ai2tT+4bHdNvF7FE/Zmdf43j5bUnfML5iGkX8w==
   dependencies:
     "@babel/runtime-corejs3" "^7.15.4"
-    "@douyinfe/semi-animation" "2.3.1"
+    "@douyinfe/semi-animation" "2.9.1"
     async-validator "^3.5.0"
     classnames "^2.2.6"
     date-fns "^2.9.0"
@@ -409,39 +409,40 @@
     memoize-one "^5.2.1"
     scroll-into-view-if-needed "^2.2.24"
 
-"@douyinfe/semi-icons@2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-icons/-/semi-icons-2.3.1.tgz#81b16b6d63903f298b31218e8c00c88fb78b0719"
-  integrity sha512-7WHegh5ESbgbLDJwx/H5Oa+ChXPUlVRw/cfkIUc0z9JdCVH7+L660w83mimLmvrSYOhR3YYB7nVUcrLfiuqG9A==
+"@douyinfe/semi-icons@2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-icons/-/semi-icons-2.9.1.tgz#7a04e1a77070220b04f63e6f65aac30155ed8ddd"
+  integrity sha512-puU14dbGEjA+CN2grpKD/Y/Su0OaixQOsubdytwaB+4+1aoXt7q0fOjE5tkm6o6c/LqEJVA5POSuPtEv9shGCw==
   dependencies:
     "@babel/runtime-corejs3" "^7.15.4"
     classnames "^2.2.6"
 
-"@douyinfe/semi-illustrations@2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-illustrations/-/semi-illustrations-2.3.1.tgz#8991f5d6db6b9437a372a73ad2b93684b93db0ed"
-  integrity sha512-7cBQBVJneKEfnv7aMHDmED23oJ+3/vSnqXriZK2keQOyzOSrjt3AQ12wBsjIgNgcWIwg2FI+m03jM1LxSOgo3A==
+"@douyinfe/semi-illustrations@2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-illustrations/-/semi-illustrations-2.9.1.tgz#1a448d1854ee1beeba57ea612da052b549ea105f"
+  integrity sha512-8jwLNvbTyhBZy/ivgfLDBg6LQBkBv8AJMZT7yEo/J1tkKJODCBY5Y8O4f6FcnubaomF8nD9apy5K6kWz3kgN7A==
   dependencies:
     "@babel/runtime-corejs3" "^7.15.4"
 
-"@douyinfe/semi-theme-default@2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-theme-default/-/semi-theme-default-2.3.1.tgz#2f41f609bfcc58582c5551fb1de4cd983f81452f"
-  integrity sha512-od/AjepcaxcQSkcC2YViUH9A1tL7Ve2QiFkd0Z2DG76zPG1K4yzMI5mFmB1sKQ3uVRzO5f1YOp7k0zub094NuQ==
+"@douyinfe/semi-theme-default@2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-theme-default/-/semi-theme-default-2.9.1.tgz#734113e9783ca58b69afe1769005e7e57e5a4da7"
+  integrity sha512-uCGr/wcjoApc62kAf8WTe2E7O3IUXbWgM9MJn+OcrWizvTh/qlxY4xHMJ+HgtJFGV4BXSu5I3KB4FEfT31JxoA==
   dependencies:
     glob "^7.1.6"
 
-"@douyinfe/semi-ui@^2.3.1":
-  version "2.3.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-ui/-/semi-ui-2.3.1.tgz#13cf65f66494012b7ba36fd02baab0c3bebd83df"
-  integrity sha512-2RlhndHE4J82QSMnioerWMDzlRe+Qe3kJKQo0/6U+LkY2gP9B2edMiTG5QiqQNJ8YeAwOCkKbuJPbgr/B2VdXA==
+"@douyinfe/semi-ui@^2.9.1":
+  version "2.9.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/@douyinfe/semi-ui/-/semi-ui-2.9.1.tgz#505d4783ea1fa73d307b75f62091030f1fee9332"
+  integrity sha512-SCTvVUPl4a80d/i61724aRMHBgVyBCm0pn8hfR3VQZxKlU6LGPsjt1aBro2aFFRxL1Zk5f1Gng01ARvEV10+Hg==
   dependencies:
     "@babel/runtime-corejs3" "^7.15.4"
-    "@douyinfe/semi-animation-react" "2.3.1"
-    "@douyinfe/semi-foundation" "2.3.1"
-    "@douyinfe/semi-icons" "2.3.1"
-    "@douyinfe/semi-illustrations" "2.3.1"
-    "@douyinfe/semi-theme-default" "2.3.1"
+    "@douyinfe/semi-animation" "2.9.1"
+    "@douyinfe/semi-animation-react" "2.9.1"
+    "@douyinfe/semi-foundation" "2.9.1"
+    "@douyinfe/semi-icons" "2.9.1"
+    "@douyinfe/semi-illustrations" "2.9.1"
+    "@douyinfe/semi-theme-default" "2.9.1"
     "@types/react-window" "^1.8.2"
     async-validator "^3.5.0"
     classnames "^2.2.6"
@@ -450,7 +451,7 @@
     date-fns-tz "^1.0.10"
     lodash "^4.17.21"
     react-resizable "^1.8.0"
-    react-sortable-hoc "^1.11.0"
+    react-sortable-hoc "^2.0.0"
     react-window "^1.8.2"
     resize-observer-polyfill "^1.5.1"
     scroll-into-view-if-needed "^2.2.24"
@@ -568,6 +569,11 @@
     "@svgr/hast-util-to-babel-ast" "^6.2.1"
     svg-parser "^2.0.2"
 
+"@types/js-cookie@^2.x.x":
+  version "2.2.7"
+  resolved "https://repo.huaweicloud.com/repository/npm/@types/js-cookie/-/js-cookie-2.2.7.tgz#226a9e31680835a6188e887f3988e60c04d3f6a3"
+  integrity sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://repo.huaweicloud.com/repository/npm/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -612,6 +618,25 @@
     "@rollup/pluginutils" "^4.1.2"
     react-refresh "^0.11.0"
     resolve "^1.20.0"
+
+ahooks-v3-count@^1.0.0:
+  version "1.0.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/ahooks-v3-count/-/ahooks-v3-count-1.0.0.tgz#ddeb392e009ad6e748905b3cbf63a9fd8262ca80"
+  integrity sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==
+
+ahooks@^3.3.10:
+  version "3.3.10"
+  resolved "https://repo.huaweicloud.com/repository/npm/ahooks/-/ahooks-3.3.10.tgz#a65782b0ce29df3508b5ca76355fb3005d64a011"
+  integrity sha512-CNZQRnNkvbafV5qdGcx7AT81XJNPa7vAo1XoShvdI8s6oHigTrmc+kWkyWWEywiEchF992Z6oIQEXkSsL034fw==
+  dependencies:
+    "@types/js-cookie" "^2.x.x"
+    ahooks-v3-count "^1.0.0"
+    dayjs "^1.9.1"
+    intersection-observer "^0.12.0"
+    js-cookie "^2.x.x"
+    lodash "^4.17.21"
+    resize-observer-polyfill "^1.5.1"
+    screenfull "^5.0.0"
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -809,6 +834,11 @@ date-fns@^2.9.0:
   version "2.28.0"
   resolved "https://repo.huaweicloud.com/repository/npm/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
   integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
+
+dayjs@^1.9.1:
+  version "1.11.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/dayjs/-/dayjs-1.11.1.tgz#90b33a3dda3417258d48ad2771b415def6545eb0"
+  integrity sha512-ER7EjqVAMkRRsxNCC5YqJ9d9VQYuWdGt7aiH2qA5R5wt8ZmWaP2dLUSIK6y/kVzLMlmh1Tvu5xUf4M/wdGJ5KA==
 
 debug@^3.2.6:
   version "3.2.7"
@@ -1139,6 +1169,11 @@ inherits@2.0.3:
   resolved "https://repo.huaweicloud.com/repository/npm/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
+intersection-observer@^0.12.0:
+  version "0.12.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/intersection-observer/-/intersection-observer-0.12.0.tgz#6c84628f67ce8698e5f9ccf857d97718745837aa"
+  integrity sha512-2Vkz8z46Dv401zTWudDGwO7KiGHNDkMv417T5ItcNYfmvHR/1qCTVBO9vwH8zZmQ0WkA/1ARwpysR9bsnop4NQ==
+
 invariant@^2.2.4:
   version "2.2.4"
   resolved "https://repo.huaweicloud.com/repository/npm/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
@@ -1186,6 +1221,11 @@ is-what@^3.14.1:
   version "3.14.1"
   resolved "https://repo.huaweicloud.com/repository/npm/is-what/-/is-what-3.14.1.tgz#e1222f46ddda85dead0fd1c9df131760e77755c1"
   integrity sha512-sNxgpk9793nzSs7bA6JQJGeIuRBQhAaNGG77kzYQgMkrID+lS6SlK07K5LaptscDlSaIgH+GPFzf+d75FVxozA==
+
+js-cookie@^2.x.x:
+  version "2.2.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -1483,10 +1523,10 @@ react-router@6.2.1:
   dependencies:
     history "^5.2.0"
 
-react-sortable-hoc@^1.11.0:
-  version "1.11.0"
-  resolved "https://repo.huaweicloud.com/repository/npm/react-sortable-hoc/-/react-sortable-hoc-1.11.0.tgz#fe4022362bbafc4b836f5104b9676608a40a278f"
-  integrity sha512-v1CDCvdfoR3zLGNp6qsBa4J1BWMEVH25+UKxF/RvQRh+mrB+emqtVHMgZ+WreUiKJoEaiwYoScaueIKhMVBHUg==
+react-sortable-hoc@^2.0.0:
+  version "2.0.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/react-sortable-hoc/-/react-sortable-hoc-2.0.0.tgz#f6780d8aa4b922a21f3e754af542f032677078b7"
+  integrity sha512-JZUw7hBsAHXK7PTyErJyI7SopSBFRcFHDjWW5SWjcugY0i6iH7f+eJkY8cJmGMlZ1C9xz1J3Vjz0plFpavVeRg==
   dependencies:
     "@babel/runtime" "^7.2.0"
     invariant "^2.2.4"
@@ -1577,6 +1617,11 @@ scheduler@^0.20.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+screenfull@^5.0.0:
+  version "5.2.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/screenfull/-/screenfull-5.2.0.tgz#6533d524d30621fc1283b9692146f3f13a93d1ba"
+  integrity sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==
 
 scroll-into-view-if-needed@^2.2.24:
   version "2.2.29"

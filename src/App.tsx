@@ -3,7 +3,7 @@
  * @LastEditors: Mengke
  * @email: z9mk65@gmail.com
  * @Date: 2022-02-02 22:31:47
- * @LastEditTime: 2022-03-23 21:31:25
+ * @LastEditTime: 2022-05-05 23:37:34
  * @Description: Modify here please
  */
 
@@ -24,16 +24,24 @@ function App() {
 			if (!body.hasAttribute('theme-mode')) {
 				changeDarkMode(true);
 				body.setAttribute('theme-mode', 'dark');
+				window.localStorage.setItem('semi-theme', 'dark');
 			}
 		} else {
 			if (body.hasAttribute('theme-mode')) {
 				changeDarkMode(false);
 				body.removeAttribute('theme-mode');
+				window.localStorage.setItem('semi-theme', 'light');
 			}
 		}
 	}
 	useEffect(() => {
-		matchMode(mql);
+		const theme = window.localStorage.getItem('semi-theme') === 'light';
+		if (theme) {
+			matchMode({matches: false});
+		} else {
+			matchMode(mql);
+		}
+
 		mql.addListener(matchMode);
 	})
 	return (
